@@ -4,8 +4,8 @@
 
 ## Preview
 
-![image](review.gif)
+![image](https://github.com/Noureldin2303/noureldinfarag/blob/main/review.gif)
 
-## responsive 📱
+## Responsive 📱
 
-![image](review2.gif)
+![image](https://github.com/Noureldin2303/noureldinfarag/blob/main/review2.gif)
