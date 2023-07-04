@@ -4,8 +4,12 @@
 
 ## Preview
 
-![image](https://github.com/Noureldin2303/noureldinfarag/blob/main/review.gif)
+<video width="600" height="300" controls>
+  <source src="review.mp4" type="video/mp4">
+</video>
 
 ## Responsive 📱
 
-![image](https://github.com/Noureldin2303/noureldinfarag/blob/main/review2.gif)
+<video width="300" height="400" controls>
+  <source src="review2.mp4" type="video/mp4">
+</video>
