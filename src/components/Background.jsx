@@ -32,7 +32,7 @@ export const Background = () => {
 
   return (
     <group>
-      <Sphere scale={[30, 30, 30]}>
+      <Sphere scale={[60, 60, 60]}>
         <meshBasicMaterial
           ref={material}
           side={THREE.BackSide}

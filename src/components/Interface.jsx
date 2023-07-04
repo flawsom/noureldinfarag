@@ -71,7 +71,7 @@ const AboutSection = (props) => {
           delay: 1.5,
         }}
       >
-        I'm a full-stack developer with a passion for building
+        A full-stack developer with a passion for building
         <br />
         beautiful interfaces and solving problems.
       </motion.p>
@@ -272,19 +272,19 @@ const ProjectsSection = () => {
 
   return (
     <Section>
-      <div className="flex w-full h-full gap-8 items-center justify-center mt-32">
+      <div className="flex w-full h-full gap-8 items-end justify-center mt-40">
         <button
-          className="hover:text-emerald-600 transition-colors  text-emerald-50"
+          className="text-3xl animate-[wiggle_1s_ease-in-out_infinite] hover:text-emerald-600 transition-colors text-emerald-50"
           onClick={previousProject}
         >
-          ← Previous
+          ← 
         </button>
         <h2 className="text-5xl font-bold text-emerald-50">Projects</h2>
         <button
-          className="hover:text-emerald-600 transition-colors  text-emerald-50"
+          className="text-3xl hover:text-emerald-600 transition-colors text-emerald-50"
           onClick={nextProject}
         >
-          Next →
+           →
         </button>
       </div>
     </Section>
@@ -295,7 +295,7 @@ const ContactSection = () => {
   const [state, handleSubmit] = useForm("xgejwbeq");
   return (
     <Section className={`flex justify-center`}>
-      <h2 className="text-3xl md:text-4xl text-emerald-50 font-bold">
+      <h2 className="text-3xl md:text-4xl text-emerald-50 font-bold mt-12">
         Contact me
       </h2>
       <div className="mt-4 p-6 rounded-md w-96 max-w-full">

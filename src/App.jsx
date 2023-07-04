@@ -10,10 +10,20 @@ import { Leva } from "leva";
 import { MotionConfig } from "framer-motion";
 import { Cursor } from "./components/Cursor";
 import { framerMotionConfig } from "./config";
+import { Navbar } from "./components/Navbar";
+
 function App() {
   const [section, setSection] = useState(0);
   const [menuOpened, setMenuOpened] = useState(false);
   const [started, setStarted] = useState(false);
+  const [mobile, setIsMobile] = useState(false);
+  const isMobile = window.innerWidth < 768;
+
+  useEffect(() => {
+    if (isMobile) {
+      setIsMobile(true);
+    }
+  }, [window.innerWidth]);
 
   useEffect(() => {
     setMenuOpened(false);
@@ -43,11 +53,19 @@ function App() {
             </Scroll>
           </ScrollControls>
         </Canvas>
-        <Menu
-          onSectionChange={setSection}
-          menuOpened={menuOpened}
-          setMenuOpened={setMenuOpened}
-        />
+        {isMobile ? (
+          <Menu
+            onSectionChange={setSection}
+            menuOpened={menuOpened}
+            setMenuOpened={setMenuOpened}
+          />
+        ) : (
+          <Navbar
+            onSectionChange={setSection}
+            menuOpened={menuOpened}
+            setMenuOpened={setMenuOpened}
+          />
+        )}
         <Cursor />
       </MotionConfig>
       <Leva hidden />
